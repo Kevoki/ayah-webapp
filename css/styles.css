@@ -1,6 +1,21 @@
+.body container {
+  position: relative;
+  max-width: 800px; /*Maximum width*/
+  margin: 0 auto; /*Center it*/
+}
+.body container .content{
+  position: absolute;  /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+
 /* Add a black background on the navigation */
 .navbar {
-  background-color: #333;
+  background-color: rgb(221, 11, 11);
   overflow: hidden;
 }
 /* Styling the links inside the navigation bar */
@@ -8,18 +23,21 @@
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 15px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
 }
 /* change the color of links on hover */
 .navbar a:hover {
-  background-color: whitesmoke;
-  color: black;
+  background-color: rgb(204, 18, 18);
+  color: rgb(228, 228, 228);
 }
 /* Add a color to the active/current link */
 .navbar a.active {
-  background color: grey;
+  background-color: red;
+}
+.navbar-right {
+  float: right;
 }
  {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
@@ -28,31 +46,11 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100%;
+  height: 100%;
   position: relative;
   margin: auto;
 } 
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-} 
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-} */
-
 /* The dots/bullets/indicators */
 .dot {
   height: 15px;
@@ -62,7 +60,7 @@ img {vertical-align: middle;}
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-} */
+} 
 
 .active {
   background-color: #717171;
