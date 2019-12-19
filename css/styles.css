@@ -1,16 +1,35 @@
+
 * {
   box-sizing: border-box;
 }
 body {
   font-family: Verdana, sans-serif;
+  background-color: rgb(238, 83, 83);
 }
 .mySlides {
   display: none;
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 img {
   vertical-align: middle;
 }
-
+.body container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+/*Mid left text*/
+.textonimage {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
@@ -142,4 +161,14 @@ button {
   display:block;
   padding-top:65%;
   padding-bottom: 25%;
+}
+h6 {
+  text-align: center;
+  color: darkblue;
+}
+/* .findpage{
+  background-color: rgb(238, 83, 83);
+} */
+#intro {
+  color: rgb(0, 0, 0);
 }
